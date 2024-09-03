@@ -1,13 +1,11 @@
 {
-  "name": "folder-structure-node",
+  "name": "recipe-backend",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "start": "npm run build && node build/server.js",
-    "start:dev": "nodemon server.ts",
-    "db:create": "sequelize-cli db:create",
-    "migrate:up": "sequelize-cli db:migrate"
+    "start:dev": "nodemon server.ts"
   },
   "keywords": [],
   "author": "",
@@ -27,8 +25,6 @@
     "mongoose": "^8.6.1",
     "mysql2": "^3.5.2",
     "nodemon": "^3.0.1",
-    "sequelize": "^6.32.1",
-    "sequelize-cli": "^6.6.1",
     "ts-node": "^10.9.1",
     "tsc": "^2.0.4"
   },
