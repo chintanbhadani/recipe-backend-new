@@ -4,8 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "npm run build && node build/server.js",
-    "start:dev": "nodemon server.ts"
+    "build": "rimraf ./build && tsc",
+    "start:prod": "npm run build && node build/server.js",
+    "start": "nodemon server.ts"
   },
   "keywords": [],
   "author": "",
@@ -30,6 +31,6 @@
   },
   "devDependencies": {
     "@types/jsonwebtoken": "^9.0.2",
-    "typescript": "^5.1.6"
+    "typescript": "^5.5.4"
   }
 }
